@@ -18,9 +18,9 @@
     </div>
 
   </div>
-  <div class="row">
-    <p class="green-letter" ng-repeat="verse in lyricsShowCtrl.song.englishLyric">{{verse}}</p>
-    <p class="yellow-letter" ng-repeat="verse in lyricsShowCtrl.song.portugueseLyric">{{verse}}</p>
+  <div class="row" ng-repeat=" line in lyricsShowCtrl.song.verse1">
+    <p class="green-letter">{{line.english}}</p>
+    <p class="yellow-letter">{{line.portuguese}}</p>
   </div>
   <div class="row">
     <div class="col-md-6">

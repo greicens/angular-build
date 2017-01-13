@@ -11,10 +11,13 @@ function LyricsShowController($http, $routeParams, $location){
   var portugueseLyric = "Meu chá esfriou, estou me perguntando o porquê de eu sequer ter saído da cama. A chuva da manhã embaça a minha janela, e eu não posso ver nada. E mesmo se eu pudesse seria tudo cinza, menos a sua foto na minha parede. Ela me lembra que não é tão ruim. Não é tão ruim"
 
   vm.test = "is this working?";
-  vm.song = {
-    artistName: 'Dido',
-    album: 'No Angel',
-    title: 'Thank You',
-    englishLyric: englishLyrics.split('.'),
-    portugueseLyric: portugueseLyric.split('.') }
+  $http({
+    method: 'GET',
+    url: 'http://localhost:3000/api/songs'
+  }).then(function onSucess(response){
+    vm.song = response.data;
+    console.log(response, "response for a song");
+  },function onError(err){
+    console.log(err, "something is not working :(");
+  })
 }
