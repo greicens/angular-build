@@ -14,6 +14,7 @@ function LyricsShowController($http, $routeParams, $location){
   vm.song = {
     artistName: 'Dido',
     album: 'No Angel',
+    title: 'Thank You',
     englishLyric: englishLyrics.split('.'),
     portugueseLyric: portugueseLyric.split('.') }
 }

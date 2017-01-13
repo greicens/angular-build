@@ -1,23 +1,26 @@
 <div class="container">
-  <h1>TESTING</h1>
+  <div class="row"></div>
   <div class="row">
     <div class="col-md-3 content-card">
       <img src="images/placeholder.png" alt="album image">
     </div>
     <div class="col-md-3 content-card">
-      <span> <h1>Song Title </h1> </span>
+      <span> <h1>{{lyricsShowCtrl.song.title}} </h1> </span>
       <p><strong>Artist: </strong>{{lyricsShowCtrl.song.artistName}}</p>
       <p><strong>Album: </strong>{{lyricsShowCtrl.song.album}}</p>
 
     </div>
-    <div class="col-md-4 content-card">
+    <div class="col-md-4 content-card ">
+      <div class="panel panel-success ">
 
+        <div class="panel-heading panel-font">EASY</div>
+      </div>
     </div>
 
   </div>
   <div class="row">
-    <p ng-repeat="verse in lyricsShowCtrl.song.englishLyric">{{verse}}</p>
-    <p ng-repeat="verse in lyricsShowCtrl.song.portugueseLyric">{{verse}}</p>
+    <p class="green-letter" ng-repeat="verse in lyricsShowCtrl.song.englishLyric">{{verse}}</p>
+    <p class="yellow-letter" ng-repeat="verse in lyricsShowCtrl.song.portugueseLyric">{{verse}}</p>
   </div>
   <div class="row">
     <div class="col-md-6">

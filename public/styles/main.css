@@ -1,13 +1,21 @@
-*{
+/**{
   border: dashed 1px black;
-}
+}*/
 h1{
   color: white;
+  font-family:'Changa One', cursive;
 }
 img{
   margin: 5px;
 }
+
+p{
+  font-size: 30px;
+}
 body{
+  font-family: 'Changa One', cursive;
+  color: white;
+  text-shadow: 2px 2px #000;
   background-image: url("/images/purple-background.jpg");
 }
 
@@ -21,7 +29,7 @@ body{
 }
 
 .row{
-  min-height: 200px;
+  min-height: 50px;
 
 }
 .content-card{
@@ -39,4 +47,17 @@ body{
   font-size: 12px;
   line-height: 1.42;
   border-radius: 30px;
+}
+
+.panel-font{
+  font-size: 40px;
+  color: green;
+}
+
+.green-letter{
+  color: green;
+  font-size: 30px;
+}
+.yellow-letter{
+  color: yellow;
 }

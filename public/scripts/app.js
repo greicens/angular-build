@@ -1,7 +1,7 @@
 // app.js
 console.log("app.js loading");
 angular
-  .module('lyricsApp', ['ngRoute'])
+  .module('lyricsApp', ['ngRoute', 'ui.bootstrap'])
   .config(config);
 
 config.$inject = ['$routeProvider', '$locationProvider'];

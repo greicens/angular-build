@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/greicens/angular-build/issues"
   },
-  "homepage": "https://github.com/greicens/angular-build#readme"
+  "homepage": "https://github.com/greicens/angular-build#readme",
+  "dependencies": {
+    "angular-ui-bootstrap": "^2.4.0",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0"
+  }
 }

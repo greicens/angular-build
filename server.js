@@ -17,7 +17,6 @@ app.get('/', function homepage(req, res){
 
 app.get('/templates/:name', function templates(req, res) {
   var name = req.params.name;
-  console.log(name, "get file by name");
   res.sendFile('/views/templates/' + name + '.html', {root: __dirname});
 });
 // ALL OTHER ROUTES (ANGULAR HANDLES)
