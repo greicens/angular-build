@@ -1,6 +1,15 @@
 *{
   border: dashed 1px black;
 }
+h1{
+  color: white;
+}
+img{
+  margin: 5px;
+}
+body{
+  background-image: url("/images/purple-background.jpg");
+}
 
 .icon{
   width: 30px;
@@ -17,8 +26,17 @@
 }
 .content-card{
   min-height: 200px;
-  background-color: #e6ffff;
   padding: 0 5px 0 5px;
   margin: 10px;
   border-radius: 10px;
+}
+
+.btn-circle {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.42;
+  border-radius: 30px;
 }
