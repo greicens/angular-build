@@ -1,0 +1,24 @@
+*{
+  border: dashed 1px black;
+}
+
+.icon{
+  width: 30px;
+  height: 30px;
+  margin: 0 8px;
+}
+.container{
+  min-height: 200px;
+}
+
+.row{
+  min-height: 200px;
+
+}
+.content-card{
+  min-height: 200px;
+  background-color: #e6ffff;
+  padding: 0 5px 0 5px;
+  margin: 10px;
+  border-radius: 10px;
+}
