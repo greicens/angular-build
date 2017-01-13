@@ -13,7 +13,7 @@ function LyricsShowController($http, $routeParams, $location){
   vm.test = "is this working?";
   $http({
     method: 'GET',
-    url: 'http://localhost:3000/api/songs'
+    url: '/api/songs'
   }).then(function onSucess(response){
     vm.song = response.data;
     console.log(response, "response for a song");
