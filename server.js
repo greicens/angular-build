@@ -6,7 +6,22 @@ var bodyParser = require('body-parser');
 
 // generate a new express app and call it 'app'
 var app = express();
+var songs = [
+  [
+    {
+      verse1: {
+        eng: " dlfkdlfkdjf each line of the song",
+        spn: " sldkjfldkjf",
+        ita: " dfldkjfdlk"
+      }
+    }
+    {
 
+    }
+  ],
+  [],
+  []
+]
 // serve static files from public folder
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.urlencoded({extended: true}));
