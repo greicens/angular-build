@@ -3,7 +3,6 @@
 }*/
 h1{
   color: white;
-  font-family:'Changa One', cursive;
 }
 img{
   margin: 5px;
@@ -13,7 +12,7 @@ p{
   font-size: 30px;
 }
 body{
-  font-family: 'Changa One', cursive;
+  font-family: 'Roboto', sans-serif;
   color: white;
   text-shadow: 2px 2px #000;
   background-image: url("/images/purple-background.jpg");
@@ -55,9 +54,21 @@ body{
 }
 
 .green-letter{
-  color: green;
+  color: yellow;
   font-size: 30px;
+  font-weight: 800;
 }
 .yellow-letter{
-  color: yellow;
+  color: white;
+
+}
+
+iframe{
+  height: 250px;
+  width: 80%;
+	border-radius: 20px;
+	overflow:hidden;
+  margin: 10px;
+
+	/*position:relative;*/
 }

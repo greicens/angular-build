@@ -14,8 +14,10 @@ function LyricsShowController($http, $routeParams, $location){
   $http({
     method: 'GET',
     url: '/api/songs'
+    // url: '/api/songs?difficulty="easy"'
+
   }).then(function onSucess(response){
-    vm.song = response.data;
+    vm.songs = response.data;
     console.log(response, "response for a song");
   },function onError(err){
     console.log(err, "something is not working :(");

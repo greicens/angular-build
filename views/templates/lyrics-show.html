@@ -2,25 +2,27 @@
   <div class="row"></div>
   <div class="row">
     <div class="col-md-3 content-card">
-      <img src="images/placeholder.png" alt="album image">
+      <span> <h1>Title | {{lyricsShowCtrl.songs[0].title}} </h1> </span>
+      <p>Artist | {{lyricsShowCtrl.songs[0].artistName}}</p>
+      <p>Album | {{lyricsShowCtrl.songs[0].album}}</p>
+      <p>Difficulty | {{lyricsShowCtrl.songs[0].difficulty}}</p>
+
     </div>
     <div class="col-md-3 content-card">
-      <span> <h1>{{lyricsShowCtrl.song.title}} </h1> </span>
-      <p><strong>Artist: </strong>{{lyricsShowCtrl.song.artistName}}</p>
-      <p><strong>Album: </strong>{{lyricsShowCtrl.song.album}}</p>
-
+      <img src="{{lyricsShowCtrl.songs[0].albumCoverUrl}}" alt="album image">
     </div>
-    <div class="col-md-4 content-card ">
-      <div class="panel panel-success ">
+    <div class="col-md-4 content-card">
+      <div class="frame">
+        <iframe width="230" height="230" src="https://www.youtube.com/embed/r4KB_XckOGU" frameborder="0" allowfullscreen></iframe>
 
-        <div class="panel-heading panel-font">EASY</div>
       </div>
     </div>
 
   </div>
-  <div class="row" ng-repeat=" line in lyricsShowCtrl.song.verse1">
+  <div class="row" ng-repeat=" line in lyricsShowCtrl.songs[0].verse1">
     <p class="green-letter">{{line.english}}</p>
     <p class="yellow-letter">{{line.portuguese}}</p>
+    <hr>
   </div>
   <div class="row">
     <div class="col-md-6">

@@ -10,6 +10,8 @@ var songs = [
     { artistName: 'Dido',
       album: 'No Angel',
       title: 'Thank You',
+      difficulty: 'easy',
+      albumCoverUrl: 'images/dido.png',
       verse1:[
          {
           english: "My tea's gone cold, I wondering why I got out of bed at all.",
@@ -45,8 +47,18 @@ app.get('/templates/:name', function templates(req, res) {
 });
 
 app.get('/api/songs', function(req,res){
-  res.json(songs[0]);
+  // var songsToReturn = [];
+  // songs.forEach(function(song){
+  //   if(song.difficulty === req.query.difficulty){
+  //     songsToReturn.push(song);
+  //   }
+  // })
+  res.json(songs);
 });
+
+// app.get('/api/songs/?', function(req, res){
+//
+// })
 // ALL OTHER ROUTES (ANGULAR HANDLES)
 // redirect all other paths to index
 app.get('*', function homepage (req, res) {
