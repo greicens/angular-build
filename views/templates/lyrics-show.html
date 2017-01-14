@@ -1,31 +1,30 @@
 <div class="container">
   <div class="row"></div>
-  <div class="row">
-    <div class="col-md-3 content-card">
+  <div class="row ">
+    <div class="col-md-3 level-card ">
       <span> <h1>Title | {{lyricsShowCtrl.songs[0].title}} </h1> </span>
       <p>Artist | {{lyricsShowCtrl.songs[0].artistName}}</p>
       <p>Album | {{lyricsShowCtrl.songs[0].album}}</p>
       <p>Difficulty | {{lyricsShowCtrl.songs[0].difficulty}}</p>
 
     </div>
-    <div class="col-md-3 content-card">
+    <div class="col-md-3 level-card">
       <img src="{{lyricsShowCtrl.songs[0].albumCoverUrl}}" alt="album image">
     </div>
-    <div class="col-md-4 content-card">
+    <div class="col-md-4 col-xs-4 level-card">
       <div class="frame">
-        <iframe width="230" height="230" src="https://www.youtube.com/embed/r4KB_XckOGU" frameborder="0" allowfullscreen></iframe>
-
+        <iframe class="embed-reponsive-item" width="230" height="230" src="https://www.youtube.com/embed/r4KB_XckOGU" frameborder="0" allowfullscreen></iframe>
       </div>
     </div>
 
   </div>
-  <div class="row" ng-repeat=" line in lyricsShowCtrl.songs[0].verse1">
-    <p class="green-letter">{{line.english}}</p>
-    <p class="yellow-letter">{{line.portuguese}}</p>
+  <div class="row level-card" ng-repeat=" line in lyricsShowCtrl.songs[0].verse1">
+    <p class="english">{{line.english}}</p>
+    <p class="native-languange">{{line.portuguese}}</p>
     <hr>
   </div>
   <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-6 ">
       <button class='btn btn-info' ng-href="/lyrics"><span class="glyphicon glyphicon-arrow-left"></span> Back</button>
     </div>
     <div class="col-md-6">
