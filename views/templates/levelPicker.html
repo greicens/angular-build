@@ -1,4 +1,16 @@
 <div class="row" >
+  <div class="">
+    <div class="btn-group " uib-dropdown is-open="status.isopen">
+      <button  type="button" class="btn btn-primary" uib-dropdown-toggle ng-disabled="disabled">
+        Choose language <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="single-button">
+        <li role="menuitem"><a ng-href="/lyrics">Portuguese</a></li>
+        <li role="menuitem"><a ng-href="#">Spanish</a></li>
+      </ul>
+    </div>
+  </div>
+
   <div class="col-md-1"></div>
   <div class="level-card col-md-3 ">
     <a ng-href="/lyrics"><button class='btn btn-success btn-circle center-block' >Easy</button></a>
@@ -8,16 +20,6 @@
   <div class="level-card col-md-3">
     <a ng-href="/lyrics"><button class='btn btn-warning btn-circle center-block' ng-href="/lyrics">Medium</button></a>
     <h1 class="text-center">Hello {{levelCtrl.test}}!</h1>
-    <div class="btn-group " uib-dropdown is-open="status.isopen">
-          <button  type="button" class="btn btn-primary" uib-dropdown-toggle ng-disabled="disabled">
-            Choose a Song <span class="caret"></span>
-          </button>
-          <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="single-button">
-            <li role="menuitem"><a ng-href="/lyrics">{{levelCtrl.items[0]}}</a></li>
-            <li role="menuitem"><a ng-href="#">{{levelCtrl.items[1]}} 2</a></li>
-          </ul>
-        </div>
-
   </div>
   <div class="level-card col-md-3">
     <a ng-href="/lyrics"><button class='btn btn-danger btn-circle center-block' ng-href="/lyrics">Hard</button></a>
