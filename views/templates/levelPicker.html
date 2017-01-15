@@ -1,7 +1,7 @@
 <div class="row" >
-  <div class="">
-    <div class="btn-group " uib-dropdown is-open="status.isopen">
-      <button  type="button" class="btn btn-primary" uib-dropdown-toggle ng-disabled="disabled">
+  <div class="row ">
+    <div class="btn-group center-block" uib-dropdown is-open="status.isopen">
+      <button  type="button" class="btn btn-primary btn-large center-block " uib-dropdown-toggle ng-disabled="disabled">
         Choose language <span class="caret"></span>
       </button>
       <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="single-button">
@@ -10,19 +10,19 @@
       </ul>
     </div>
   </div>
-
+  <div class="row"></div>
   <div class="col-md-1"></div>
   <div class="level-card col-md-3 ">
-    <a ng-href="/lyrics"><button class='btn btn-success btn-circle center-block' >Easy</button></a>
+    <a ng-href="/lyrics"><button class='btn btn-success btn-large center-block' >Beginner</button></a>
     <h1 class="text-center">Hello {{levelCtrl.test}}!</h1>
 
   </div>
   <div class="level-card col-md-3">
-    <a ng-href="/lyrics"><button class='btn btn-warning btn-circle center-block' ng-href="/lyrics">Medium</button></a>
+    <a ng-href="/lyrics"><button class='btn btn-warning btn-large center-block' ng-href="/lyrics">Intermediate</button></a>
     <h1 class="text-center">Hello {{levelCtrl.test}}!</h1>
   </div>
   <div class="level-card col-md-3">
-    <a ng-href="/lyrics"><button class='btn btn-danger btn-circle center-block' ng-href="/lyrics">Hard</button></a>
+    <a ng-href="/lyrics"><button class='btn btn-danger btn-large center-block' ng-href="/lyrics">Advanced</button></a>
     <h1 class="text-center">Hello {{levelCtrl.test}}!</h1>
 
   </div>

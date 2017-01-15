@@ -9,7 +9,9 @@ a{
   text-decoration: none;
 }
 img{
-  margin: 5px;
+  height: 250px;
+  width: 280px;
+  margin: 10px
 }
 
 p{
@@ -18,6 +20,8 @@ p{
 body{
   font-family: 'Roboto', sans-serif;
   color: white;
+  background: url("/images/background4.jpg");
+
   /*text-shadow: 2px 2px #000;*/
 }
 ul {
@@ -28,8 +32,8 @@ ul {
 
 iframe{
   height: 250px;
-  width: 80%;
-	border-radius: 20px;
+  width: 280px;
+	border-radius: 15px;
 	overflow:hidden;
   margin: 10px;
 
@@ -40,9 +44,14 @@ footer{
   color: black;
   text-align: center;
   font-size: 15px;
-  background-color: white;
   padding: 10px;
+  background:rgba(255,255,255, 0.3)
 }
+
+button{
+ align-items: center;
+}
+
 .icon{
   width: 30px;
   height: 30px;
@@ -58,14 +67,26 @@ footer{
 
 }
 .content-card{
-  min-height: 200px;
-  padding: 0 5px 0 5px;
+  height: 250px;
+  width: 280px;
+  padding: 15px;
   margin: 10px;
-  border-radius: 10px;
-  text-align: center;
+  border-radius: 15px;
+  text-align: left;
+  box-shadow: 10px 10px 5px 0px rgba(255,255,255,0.75);
 }
 
-.btn-circle {
+.level-card {
+    margin: 10px;
+    padding: 15px;
+    background: rgba(0,0,0,0.5);
+    border-radius: 10px;
+    align-content: center;
+    box-shadow: 10px 10px 5px 0px rgba(255,255,255,0.75);
+}
+
+
+.btn-large {
   width: 160px;
   height: 60px;
   text-align: center;
@@ -84,34 +105,27 @@ footer{
 
 }
 
-.header{
-  background: rgba(0,0,0, 0.5);
+header{
   font-family: 'Roboto', sans-serif;
   color: white;
   text-align: center;
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.75);
 
 }
 
-.level-card {
-    margin: 10px;
-    padding: 15px;
-    background: rgba(0,0,0,0.5);
-    border-radius: 10px;
-    align-content: center;
-}
 
 .lyrics-card {
     margin: 20px;
     padding: 20px;
-    background: rgba(0,0,0,0.5);
+    background-color: rgba(64.3, 42.7, 54.9, 0.5);
     border-radius: 10px;
     align-content: center;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 .main{
-  background-image: url("/images/purple-background.jpg");
 
 }
-.dropdown-menu{
+.dropdown-toggle{
   left: 50%;
   right: auto;
   text-align: center;
@@ -119,4 +133,10 @@ footer{
 }
 .btn{
   text-align: center;
+}
+
+.btn-group{
+  text-align: center;
+  padding: 20px;
+
 }
