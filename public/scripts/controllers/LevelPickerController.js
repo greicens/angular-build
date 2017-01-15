@@ -9,11 +9,15 @@ function LevelPickerController($http){
   console.log("LevelPickerController function");
   var vm = this;
   vm.test = "is this working?";
-  vm.items = ['song1', 'song2'];
-
+  vm.items = ['Portuguese', 'Spanish'];
   vm.status = {
     isopen: false
   };
+
+  vm.itemSelected = function(item){
+    console.log(item, "selected")
+    return item;
+  }
 
   vm.toggledDropdown = function(event){
     event.preventDefaut();

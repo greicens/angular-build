@@ -10,12 +10,12 @@ var songs = [
     { artistName: 'Dido',
       album: 'No Angel',
       title: 'Thank You',
-      difficulty: 'easy',
+      difficulty: "easy",
       albumCoverUrl: 'images/dido.png',
       verse1:[
          {
           english: "My tea's gone cold, I wondering why I got out of bed at all.",
-          portuguese: "Meu chá esfriou, estou me perguntando o porquê de eu sequer ter saído da cama."
+          portuguese: "Meu chá esfriou, estou me perguntando o porquê de eu sequer ter saído da cama.",
           spanish:"Mi té se ha enfriado y me pregunto por qué me salí de la cama hoy"
         },
          {
@@ -43,7 +43,7 @@ var songs = [
         verse1:[
            {
              english:"Hello, it's me . I was wondering if after all these years you'd like to meet to go over everything",
-             portuguese:"Olá Sou eu eu estava imaginando se após todos esses anos Você gostaria que nos encontrássemos para superarmos tudo"
+             portuguese:"Olá Sou eu eu estava imaginando se após todos esses anos Você gostaria que nos encontrássemos para superarmos tudo",
              spanish:"Hola soy yo Me preguntaba si después de todos estos años te gustaría que quedásemos para analizarlo todo "
            },
            {
@@ -63,7 +63,7 @@ var songs = [
             spanish:"He olvidado cómo me sentía ante el mundo antes de que cayera a nuestros pies "
           }
         ]
-
+      }
     ]
 // serve static files from public folder
 app.use(express.static(__dirname + '/public'));
@@ -78,14 +78,18 @@ app.get('/templates/:name', function templates(req, res) {
   res.sendFile('/views/templates/' + name + '.html', {root: __dirname});
 });
 
-app.get('/api/songs', function(req,res){
-  // var songsToReturn = [];
-  // songs.forEach(function(song){
-  //   if(song.difficulty === req.query.difficulty){
-  //     songsToReturn.push(song);
-  //   }
-  // })
-  res.json(songs);
+app.get('/api/songs?', function(req,res){
+  var songsToReturn = [];
+  var difficulty = req.query.difficulty;
+  console.log(difficulty, " req.query")
+  songs.forEach(function(song){
+    console.log(song.difficulty === difficulty, "compare");
+    if(song.difficulty === req.query.difficulty){
+      songsToReturn.push(song);
+      console.log(song.difficulty, "song difficulty");
+    }
+  })
+  res.json(songsToReturn);
 });
 
 // app.get('/api/songs/?', function(req, res){

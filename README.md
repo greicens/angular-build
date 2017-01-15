@@ -1,4 +1,4 @@
-# UXDi / WDI Collabotation Project
+# [UXDI / WDI Collabotation Project](https://lit-harbor-76452.herokuapp.com/)
 
 ## Motivation
 
@@ -6,7 +6,7 @@ Help people interested in leaning English through songs lyrics.
 
 ## Team
 
-* Greice Silva
+* [Greice Silva](https://www.linkedin.com/in/greicesilva/)
 * Jamie Chow
 * Joshua Moon
 * Julian Jensen

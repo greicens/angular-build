@@ -1,30 +1,31 @@
 <div class="row" >
   <div class="row ">
-    <div class="btn-group center-block" uib-dropdown is-open="status.isopen">
-      <button  type="button" class="btn btn-primary btn-large center-block " uib-dropdown-toggle ng-disabled="disabled">
+    <div class="btn-group dropdown center-block" uib-dropdown is-open="status.isopen">
+      <button  type="button" class="btn btn-primary btn-large dropdown-toggle"
+        uib-dropdown-toggle ng-disabled="disabled" >
         Choose language <span class="caret"></span>
       </button>
       <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="single-button">
-        <li role="menuitem"><a ng-href="/lyrics">Portuguese</a></li>
-        <li role="menuitem"><a ng-href="#">Spanish</a></li>
+        <li role="menuitem" ng-repeat="item in levelCtrl.items" value="portuguese"><a ng-click="levelCtrl.itemSelected(item)">{{item}}</a></li>
       </ul>
     </div>
   </div>
   <div class="row"></div>
   <div class="col-md-1"></div>
   <div class="level-card col-md-3 ">
-    <a ng-href="/lyrics"><button class='btn btn-success btn-large center-block' >Beginner</button></a>
-    <h1 class="text-center">Hello {{levelCtrl.test}}!</h1>
+    <a ng-href="/lyrics"><button class='btn btn-success btn-large center-block'>Beginner</button></a>
+    <img class ="small-pic center-block" src="/images/dido.png" alt="">
 
   </div>
   <div class="level-card col-md-3">
     <a ng-href="/lyrics"><button class='btn btn-warning btn-large center-block' ng-href="/lyrics">Intermediate</button></a>
-    <h1 class="text-center">Hello {{levelCtrl.test}}!</h1>
+    <img class ="small-pic center-block" src="/images/hello.png" alt="">
   </div>
   <div class="level-card col-md-3">
     <a ng-href="/lyrics"><button class='btn btn-danger btn-large center-block' ng-href="/lyrics">Advanced</button></a>
-    <h1 class="text-center">Hello {{levelCtrl.test}}!</h1>
+    <img class ="small-pic center-block" src="/images/uptown-funk.png" alt="">
 
   </div>
   <div class="col-md-1"></div>
-</div>
+</di
+v>

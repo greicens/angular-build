@@ -9,7 +9,7 @@ config.$inject = ['$routeProvider', '$locationProvider'];
 function config ($routeProvider, $locationProvider) {
   $routeProvider
     .when('/', {
-      templateUrl: '/templates/levelPicker',
+      templateUrl: '/templates/level-picker',
       controllerAs: 'levelCtrl',
       controller: 'LevelPickerController'
     })

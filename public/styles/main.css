@@ -11,7 +11,9 @@ a{
 img{
   height: 250px;
   width: 280px;
-  margin: 10px
+  margin: 10px;
+  border:1px solid #ffffff;
+  border-radius: 15px;
 }
 
 p{
@@ -36,6 +38,7 @@ iframe{
 	border-radius: 15px;
 	overflow:hidden;
   margin: 10px;
+  border:1px solid #ffffff;
 
 	/*position:relative;*/
 }
@@ -45,11 +48,14 @@ footer{
   text-align: center;
   font-size: 15px;
   padding: 10px;
-  background:rgba(255,255,255, 0.3)
+  background:rgba(255,255,255, 0.3);
+  clear:both;
 }
 
 button{
  align-items: center;
+ font-family: 'Roboto', sans-serif;
+
 }
 
 .icon{
@@ -87,12 +93,13 @@ button{
 
 
 .btn-large {
-  width: 160px;
+  width: 200px;
   height: 60px;
   text-align: center;
   padding: 6px 0;
-  font-size: 12px;
+  font-size: 20px;
   line-height: 1.42;
+
 }
 
 .english{
@@ -139,4 +146,11 @@ header{
   text-align: center;
   padding: 20px;
 
+}
+.small-pic{
+  height: 100px;
+  width: 100px;
+  padding:1px;
+  border:1px solid #ffffff;
+  border-radius: 10px;
 }
