@@ -6,14 +6,13 @@
       <p>Artist | {{lyricsShowCtrl.song.artistName}}</p>
       <p>Album | {{lyricsShowCtrl.song.album}}</p>
       <p>Difficulty | {{lyricsShowCtrl.song.difficulty}}</p>
-
     </div>
     <div class="col-md-4">
-      <img src="{{lyricsShowCtrl.song.albumCoverUrl}}" alt="album image">
+      <img src="/{{lyricsShowCtrl.song.albumCoverUrl}}">
     </div>
     <div class="col-md-4 col-xs-4">
       <div>
-        <iframe width="230" height="230" src="https://www.youtube.com/embed/r4KB_XckOGU" frameborder="0" allowfullscreen></iframe>
+        <iframe width="230" height="230" src={{lyricsShowCtrl.song.iframeUrl}} frameborder="0" allowfullscreen></iframe>
       </div>
     </div>
 

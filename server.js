@@ -13,6 +13,7 @@ var songs = [
       title: 'Thank You',
       difficulty: 'beginner',
       albumCoverUrl: 'images/dido.png',
+      iframeUrl: 'https://www.youtube.com/embed/r4KB_XckOGU',
       verse1:[
          {
           english: "My tea's gone cold, I wondering why I got out of bed at all.",
@@ -42,6 +43,7 @@ var songs = [
         title: 'Hello',
         difficulty: 'intermediate',
         albumCoverUrl: 'images/hello.png',
+        iframeUrl: 'https://www.youtube.com/embed/9h0Arg_-380',
         verse1:[
            {
              english:"Hello, it's me . I was wondering if after all these years you'd like to meet to go over everything",
@@ -72,6 +74,7 @@ var songs = [
         title: 'Uptown Funk',
         difficulty: 'advanced',
         albumCoverUrl: 'images/uptown-funk.png',
+        iframeUrl: 'https://www.youtube.com/embed/OPf0YbXqDm0',
         verse1:[
           {
            english:"This hit, that ice cold Michelle Pfeiffer, that white gold",

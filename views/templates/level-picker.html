@@ -15,7 +15,6 @@
   <div class="level-card col-md-3" ng-repeat="song in levelCtrl.beginner" data-ng-init="btnId='a';">
     <button id="beginner" class="btn btn-success btn-large center-block" data-ng-click="levelCtrl.getLevel($event)">Beginner</button>
     <a ng-href="/lyrics/{{song.id}}"><img class ="small-pic center-block" src={{song.albumCoverUrl}} alt=""></a>
-    <!-- <p ng-repeat="song in levelCtrl.beginner">{{song.albumCoverUrl}}</p> -->
   </div>
   <div class="level-card col-md-3" ng-repeat="song in levelCtrl.intermediate">
     <button id = "intermediate" class="btn btn-warning btn-large center-block" data-ng-click="levelCtrl.getLevel($event)">Intermediate</button>
