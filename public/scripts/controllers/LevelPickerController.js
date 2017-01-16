@@ -6,9 +6,7 @@ angular.module('lyricsApp')
 LevelPickerController.$inject = ['$http'];
 
 function LevelPickerController($http){
-  console.log("LevelPickerController function");
   var vm = this;
-
   vm.items = ['Portuguese', 'Spanish'];
   vm.beginner = [];
   vm.intermediate = [];
@@ -17,7 +15,6 @@ function LevelPickerController($http){
     method: 'GET',
     url: '/api/songs'
   }).then(function onSucess(response){
-    console.log(response.data, "response from LevelPickerController")
     vm.songs = response.data;
     vm.songs.forEach(function(song){
       if(song.difficulty === 'beginner'){

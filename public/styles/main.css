@@ -1,5 +1,5 @@
 /**{
-  border: dashed 1px black;
+  border: dashed 1px white;
 }*/
 h1{
   padding: 20px;
@@ -128,6 +128,7 @@ header{
     border-radius: 10px;
     align-content: center;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    float:left;
 }
 .main{
 
@@ -160,4 +161,9 @@ header{
   right: auto;
   text-align: center;
   transform: translate(-50%, 0);
+}
+.vocab{
+  height: 200px;
+  width: 100px;
+  float: left;
 }

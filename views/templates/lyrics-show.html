@@ -17,22 +17,12 @@
     </div>
 
   </div>
-  <div class="lyrics-card">
-    <div class="row" ng-repeat=" line in lyricsShowCtrl.song.verse1">
+  <div class="row">
+    <div class="col-md-8"ng-repeat="line in lyricsShowCtrl.song.lines">
       <p class="english">{{line.english}}</p>
       <p class="native-languange">{{line.portuguese}}</p>
       <hr>
     </div>
-
-  </div>
-  <div class="row">
-    <div class="col-md-6 ">
-      <button class='btn btn-info' ng-href="/lyrics"><span class="glyphicon glyphicon-arrow-left"></span> Back</button>
-    </div>
-    <div class="col-md-6">
-      <button class='btn btn-info' ng-href="/lyrics">Next <span class="glyphicon glyphicon-arrow-right"></span></button>
-    </div>
-
   </div>
 
 </div>

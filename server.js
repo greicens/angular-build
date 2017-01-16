@@ -14,7 +14,7 @@ var songs = [
       difficulty: 'beginner',
       albumCoverUrl: 'images/dido.png',
       iframeUrl: 'https://www.youtube.com/embed/r4KB_XckOGU',
-      verse1:[
+      lines:[
          {
           english: "My tea's gone cold, I wondering why I got out of bed at all.",
           portuguese: "Meu chá esfriou, estou me perguntando o porquê de eu sequer ter saído da cama.",
@@ -24,8 +24,8 @@ var songs = [
           english: "The morning rain clouds up my window, and I can't see at all.",
           portuguese:"A chuva da manhã embaça a minha janela, e eu não posso ver nada.",
           spanish:"La lluvia de la mañana nubla mi ventana y no puedo ver nada"
-        }],
-        verse2: [{
+        },
+        {
           english: "And even if I could it'd all be grey, but your picture on my wall.",
           portuguese:"E mesmo se eu pudesse seria tudo cinza, menos a sua foto na minha parede.",
           spanish:"Y aun si pudiera, todo se vería gris pero tú fotografía en mi pared"
@@ -44,7 +44,7 @@ var songs = [
         difficulty: 'intermediate',
         albumCoverUrl: 'images/hello.png',
         iframeUrl: 'https://www.youtube.com/embed/9h0Arg_-380',
-        verse1:[
+        lines:[
            {
              english:"Hello, it's me . I was wondering if after all these years you'd like to meet to go over everything",
              portuguese:"Olá Sou eu eu estava imaginando se após todos esses anos Você gostaria que nos encontrássemos para superarmos tudo",
@@ -54,8 +54,7 @@ var songs = [
              english:"They say that time's supposed to heal ya but I ain't done much healing",
              portuguese:"Dizem que o tempo supostamente lhe cura mas eu ainda não fui completamente curada",
              spanish:"Dicen que el tiempo se supone que cura pero a mí no me ha curado demasiado. "
-           }],
-        verse2:[
+           },
           {
             english:"Hello, can you hear me. I'm in California dreaming about who we used to be",
             portuguese:"Olá Você pode me ouvir?Estou na Califórnia sonhando com quem costumávamos ser",
@@ -75,27 +74,42 @@ var songs = [
         difficulty: 'advanced',
         albumCoverUrl: 'images/uptown-funk.png',
         iframeUrl: 'https://www.youtube.com/embed/OPf0YbXqDm0',
-        verse1:[
+        lines:[
           {
            english:"This hit, that ice cold Michelle Pfeiffer, that white gold",
            portuguese: "",
            spanish:" "
           },
           {
-           english:"",
+           english:"This one for them hood girls. Them good girls straight masterpieces. Stylin', whilen, livin' it up in the city",
            portuguese: "",
            spanish:" "
-          }
-        ],
-        verse2:[
+         },
+         {
+           english: "Got Chucks on with Saint Laurent. Got kiss myself, I'm so pretty",
+           portuguese:"",
+           spanish:""
+         },
           {
-            english:"",
+            english:"I'm too hot (hot damn). Called a police and a fireman",
             portuguese: "",
             spanish:" "
 
           },
           {
-            english:"",
+            english:"I'm too hot (hot damn). Make a dragon wanna retire man",
+            portuguese: "",
+            spanish:" "
+
+          },
+          {
+            english:"I'm too hot (hot damn). Say my name you know who I am",
+            portuguese: "",
+            spanish:" "
+
+          },
+          {
+            english:"I'm too hot (hot damn). Am I bad 'bout that money, break it down",
             portuguese: "",
             spanish:" "
 
