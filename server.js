@@ -7,10 +7,11 @@ var bodyParser = require('body-parser');
 // generate a new express app and call it 'app'
 var app = express();
 var songs = [
-    { artistName: 'Dido',
+    { id: '1',
+      artistName: 'Dido',
       album: 'No Angel',
       title: 'Thank You',
-      difficulty: "easy",
+      difficulty: 'beginner',
       albumCoverUrl: 'images/dido.png',
       verse1:[
          {
@@ -35,7 +36,8 @@ var songs = [
 
         }]
       },
-      { artistName: 'Adele',
+      { id: '2',
+        artistName: 'Adele',
         album: 'Hello',
         title: 'Hello',
         difficulty: 'intermediate',
@@ -63,6 +65,39 @@ var songs = [
             spanish:"He olvidado cómo me sentía ante el mundo antes de que cayera a nuestros pies "
           }
         ]
+      },
+      { id: '3',
+        artistName: 'Mark Ronson',
+        album: 'Uptown Special',
+        title: 'Uptown Funk',
+        difficulty: 'advanced',
+        albumCoverUrl: 'images/uptown-funk.png',
+        verse1:[
+          {
+           english:"This hit, that ice cold Michelle Pfeiffer, that white gold",
+           portuguese: "",
+           spanish:" "
+          },
+          {
+           english:"",
+           portuguese: "",
+           spanish:" "
+          }
+        ],
+        verse2:[
+          {
+            english:"",
+            portuguese: "",
+            spanish:" "
+
+          },
+          {
+            english:"",
+            portuguese: "",
+            spanish:" "
+
+          }
+        ]
       }
     ]
 // serve static files from public folder
@@ -78,23 +113,28 @@ app.get('/templates/:name', function templates(req, res) {
   res.sendFile('/views/templates/' + name + '.html', {root: __dirname});
 });
 
+app.get('/api/songs', function(req,res){
+  res.json(songs)
+});
+
 app.get('/api/songs?', function(req,res){
   var songsToReturn = [];
   var difficulty = req.query.difficulty;
-  console.log(difficulty, " req.query")
   songs.forEach(function(song){
-    console.log(song.difficulty === difficulty, "compare");
     if(song.difficulty === req.query.difficulty){
       songsToReturn.push(song);
-      console.log(song.difficulty, "song difficulty");
     }
   })
   res.json(songsToReturn);
 });
 
-// app.get('/api/songs/?', function(req, res){
-//
-// })
+app.get('/api/songs/:id', function(req, res){
+  songs.forEach(function(song){
+    if(song.id === req.params.id){
+      res.json(song);
+    }
+  })
+})
 // ALL OTHER ROUTES (ANGULAR HANDLES)
 // redirect all other paths to index
 app.get('*', function homepage (req, res) {

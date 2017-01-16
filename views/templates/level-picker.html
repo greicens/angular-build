@@ -6,26 +6,25 @@
         Choose language <span class="caret"></span>
       </button>
       <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="single-button">
-        <li role="menuitem" ng-repeat="item in levelCtrl.items" value="portuguese"><a ng-click="levelCtrl.itemSelected(item)">{{item}}</a></li>
+        <li role="menuitem" ng-repeat="item in levelCtrl.items"><a ng-click="levelCtrl.itemSelected(item)">{{item}}</a></li>
       </ul>
     </div>
   </div>
   <div class="row"></div>
   <div class="col-md-1"></div>
-  <div class="level-card col-md-3 ">
-    <a ng-href="/lyrics"><button class='btn btn-success btn-large center-block'>Beginner</button></a>
-    <img class ="small-pic center-block" src="/images/dido.png" alt="">
-
+  <div class="level-card col-md-3" ng-repeat="song in levelCtrl.beginner" data-ng-init="btnId='a';">
+    <button id="beginner" class="btn btn-success btn-large center-block" data-ng-click="levelCtrl.getLevel($event)">Beginner</button>
+    <a ng-href="/lyrics/{{song.id}}"><img class ="small-pic center-block" src={{song.albumCoverUrl}} alt=""></a>
+    <!-- <p ng-repeat="song in levelCtrl.beginner">{{song.albumCoverUrl}}</p> -->
   </div>
-  <div class="level-card col-md-3">
-    <a ng-href="/lyrics"><button class='btn btn-warning btn-large center-block' ng-href="/lyrics">Intermediate</button></a>
-    <img class ="small-pic center-block" src="/images/hello.png" alt="">
+  <div class="level-card col-md-3" ng-repeat="song in levelCtrl.intermediate">
+    <button id = "intermediate" class="btn btn-warning btn-large center-block" data-ng-click="levelCtrl.getLevel($event)">Intermediate</button>
+    <a ng-href="lyrics/{{song.id}}"><img class ="small-pic center-block" src={{song.albumCoverUrl}} alt=""></a>
   </div>
-  <div class="level-card col-md-3">
-    <a ng-href="/lyrics"><button class='btn btn-danger btn-large center-block' ng-href="/lyrics">Advanced</button></a>
-    <img class ="small-pic center-block" src="/images/uptown-funk.png" alt="">
+  <div class="level-card col-md-3" ng-repeat="song in levelCtrl.advanced">
+    <button id ="advanced" class="btn btn-danger btn-large center-block" data-ng-click="levelCtrl.getLevel($event)">Advanced</button>
+    <a ng-href="lyrics/{{song.id}}"><img class ="small-pic center-block" src={{song.albumCoverUrl}} alt=""></a>
 
   </div>
   <div class="col-md-1"></div>
-</di
-v>
+</div>
