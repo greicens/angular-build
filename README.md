@@ -7,7 +7,7 @@ Help people interested in leaning English through songs lyrics.
 ## Team
 
 * [Greice Silva](https://www.linkedin.com/in/greicesilva/)
-* Jamie Chow
+* [Jamie Chow](https://www.linkedin.com/in/jamie-chow-16502511/)
 * [Joshua Moon](https://www.linkedin.com/in/joshjmoon/)
 * Julian Jensen
 
