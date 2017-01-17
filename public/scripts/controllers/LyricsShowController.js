@@ -31,9 +31,11 @@ function LyricsShowController($http, $routeParams, $location,  $sce){
   vm.itemSelected = function(item){
     console.log(item, "selected");
     if(item === 'Portuguese'){
-      vm.portuguese = 'true';
+      vm.portuguese = true;
+      vm.spanish = false;
     } else if(item === 'Spanish'){
-      vm.spanish = 'true';
+      vm.spanish = true;
+      vm.portuguese = false;
     }
     return item;
   };
