@@ -1,4 +1,17 @@
 <div class="container">
+  <div class="row">
+    <div class="row ">
+      <div class="btn-group dropdown center-block" uib-dropdown is-open="status.isopen">
+        <button  type="button" class="btn btn-primary btn-large dropdown-toggle"
+          uib-dropdown-toggle ng-disabled="disabled" >
+          Choose language <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="single-button">
+          <li role="menuitem" ng-repeat="item in lyricsShowCtrl.items"><a ng-click="lyricsShowCtrl.itemSelected(item)">{{item}}</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
   <div class="row"></div>
   <div class="row ">
     <div class="col-md-4 level-card content-card">
@@ -15,14 +28,13 @@
         <iframe width="230" height="230" src={{lyricsShowCtrl.trustSrc(lyricsShowCtrl.song.iframeUrl)}} frameborder="0" allowfullscreen></iframe>
       </div>
     </div>
-
   </div>
   <div class="row">
-    <div class="col-md-8"ng-repeat="line in lyricsShowCtrl.song.lines">
+    <div class="col-md-12"ng-repeat="line in lyricsShowCtrl.song.lines">
       <p class="english">{{line.english}}</p>
-      <p class="native-languange">{{line.portuguese}}</p>
+      <p ng-show="lyricsShowCtrl.portuguese">{{line.portuguese}}</p>
+      <p ng-show="lyricsShowCtrl.spanish">{{line.spanish}}</p>
       <hr>
     </div>
   </div>
-
 </div>

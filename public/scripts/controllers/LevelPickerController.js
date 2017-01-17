@@ -7,10 +7,10 @@ LevelPickerController.$inject = ['$http'];
 
 function LevelPickerController($http){
   var vm = this;
-  vm.items = ['Portuguese', 'Spanish'];
   vm.beginner = [];
   vm.intermediate = [];
   vm.advanced = [];
+
   $http({
     method: 'GET',
     url: '/api/songs'
@@ -28,22 +28,4 @@ function LevelPickerController($http){
   },function onError(err){
     console.log(err, "something is not working");
   });
-
-  vm.status = {
-    isopen: false
-  };
-
-  vm.itemSelected = function(item){
-    console.log(item, "selected")
-    return item;
-  };
-
-  vm.toggledDropdown = function(event){
-    event.preventDefaut();
-    event.stopPropagation();
-    vm.status.isopen = !vm.status.isopen;
-  }
-
-   vm.appendToEl = angular.element(document.querySelector('#dropdown-long-content'));
-
 }
