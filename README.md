@@ -1,4 +1,4 @@
-# [UXDI / WDI Collabotation Project](https://lit-harbor-76452.herokuapp.com/)
+# [UXDI / WDI Collaboration Project](https://lit-harbor-76452.herokuapp.com/)
 
 ## Motivation
 
