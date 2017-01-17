@@ -13,7 +13,7 @@ Help people interested in leaning English through songs lyrics.
 
 ## Technologies
 
-* Bootstrap
+* UI Bootstrap
 * Node.js
 * Express
 * Angular
