@@ -79,42 +79,41 @@ var songs = [
     lines:[
       {
        english:"This hit, that ice cold Michelle Pfeiffer, that white gold",
-       portuguese: "",
-       spanish:" "
+       portuguese: "Este sucesso, aquele gelo. Michelle Pfeiffer, aquele ouro branco",
+       spanish:"Está aquí el hielo frío. Michelle Pfeiffer , el oro blanco "
       },
       {
        english:"This one for them hood girls. Them good girls straight masterpieces. Stylin', whilen, livin' it up in the city",
-       portuguese: "",
-       spanish:" "
+       portuguese: "Essa é para as garotas das quebradas. Para as garotas boas, obras primas de verdade. Estilosas, transcendentes. Vivendo ao maximo na cidade",
+       spanish:"Esto es para las chicas con capuchas, las chicas buenas, las obras maestras rectas. Corrediza, un animal salvaje, esto se disfruta en la ciudad. "
      },
      {
        english: "Got Chucks on with Saint Laurent. Got kiss myself, I'm so pretty",
-       portuguese:"",
-       spanish:""
+       portuguese:"Estou usando tênis Chuck Taylor com Saint Laurent. Tenho que me beijar, sou tão bonito",
+       spanish:"Conseguí un esmoquin, no se lo que digo, tengo que besarme a mi mismo, soy hermoso. "
      },
       {
         english:"I'm too hot (hot damn). Called a police and a fireman",
-        portuguese: "",
-        spanish:" "
+        portuguese: "Sou muito quente (quente para caramba). Chame a polícia e um bombeiro",
+        spanish:"Soy muy caliente, llama a la policía y a los bomberos.  "
 
       },
       {
         english:"I'm too hot (hot damn). Make a dragon wanna retire man",
-        portuguese: "",
-        spanish:" "
+        portuguese: "Faço um dragão querer se aposentar, cara. Sou muito quente (quente para caramba)",
+        spanish:"Soy muy caliente, provacaste al dragón, ejecuta tu retiro. "
 
       },
       {
         english:"I'm too hot (hot damn). Say my name you know who I am",
-        portuguese: "",
-        spanish:" "
+        portuguese: "Sou muito quente (quente para caramba).Diga meu nome, você sabe quem sou",
+        spanish:"Soy muy caliente, di mi nombre, tu ya sabes quien soy.  "
 
       },
       {
         english:"I'm too hot (hot damn). Am I bad 'bout that money, break it down",
-        portuguese: "",
-        spanish:" "
-
+        portuguese: "Sou muito quente (quente para caramba). E minha banda faturou esse dinheiro. Manda ver",
+        spanish:"Soy muy caliente, obtuve mi apuesta de dinero."
       }
     ]
   }

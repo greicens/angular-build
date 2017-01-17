@@ -33,7 +33,7 @@ function LyricsShowController($http, $routeParams, $location,  $sce){
     if(item === 'Portuguese'){
       vm.portuguese = 'true';
     } else if(item === 'Spanish'){
-      vm.spanish = 'true'
+      vm.spanish = 'true';
     }
     return item;
   };
