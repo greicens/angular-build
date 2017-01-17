@@ -13,12 +13,6 @@ function config ($routeProvider, $locationProvider) {
       controllerAs: 'levelCtrl',
       controller: 'LevelPickerController'
     })
-    // .when('/lyrics', {
-    //   templateUrl: '/templates/lyrics-show',
-    //   controllerAs: 'lyricsShowCtrl',
-    //   controller: 'LyricsShowController'
-    //
-    // })
     .when('/lyrics/:id', {
       templateUrl: '/templates/lyrics-show',
       controllerAs: 'lyricsShowCtrl',
