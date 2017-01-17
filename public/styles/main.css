@@ -73,15 +73,6 @@ ul{
   padding: 20px;
 }
 
-.btn-large {
-  width: 200px;
-  height: 60px;
-  text-align: center;
-  padding: 6px 0;
-  font-size: 20px;
-  line-height: 1.42;
-}
-
 .container{
   min-height: 200px;
 }
@@ -116,7 +107,9 @@ ul{
   font-size: 30px;
   font-weight: 800;
 }
-
+.green{
+  background-color: green;
+}
 .icon{
   width: 30px;
   height: 30px;
@@ -142,6 +135,23 @@ ul{
   float:left;
 }
 
+.orange{
+  background-color: orange;
+}
+
+.rectangle {
+  width: 200px;
+  height: 60px;
+  text-align: center;
+  padding: 6px 6px;
+  font-size: 20px;
+  line-height: 1.42;
+  border-radius: 15px;
+}
+
+.red{
+  background-color: red;
+}
 .row{
   min-height: 50px;
 }
@@ -158,4 +168,8 @@ ul{
   height: 200px;
   width: 100px;
   float: left;
+}
+
+#beginner, #intermediate, #advanced{
+  padding-top: 15px;
 }
