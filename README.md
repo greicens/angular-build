@@ -20,9 +20,12 @@ Help people interested in leaning English through songs lyrics.
 
 ##Screen Shots
 
-![alt text](public/images/fileName.jpg "placeholder")
-![alt text](public/images/fileName.jpg "placeholder")
+![level-picker](public/images/angular-build1.png "placeholder")
+![lyrics-show](public/images/angular-build2.png "placeholder")
 
 ## Ideas for future upgrade
 
-* XXXXX
+* Spotify API integration
+* Game to complete lyrics blank words to practice listening
+* A vocabulary column
+* Accept translation edits from users
