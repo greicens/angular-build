@@ -8,7 +8,7 @@ Help people interested in leaning English through songs lyrics.
 
 * [Greice Silva](https://www.linkedin.com/in/greicesilva/)
 * Jamie Chow
-* Joshua Moon
+* [Joshua Moon](https://www.linkedin.com/in/joshjmoon/)
 * Julian Jensen
 
 ## Technologies
@@ -16,8 +16,6 @@ Help people interested in leaning English through songs lyrics.
 * Bootstrap
 * Node.js
 * Express
-* MongoDB
-* Mongoose
 * Angular
 
 ##Screen Shots
